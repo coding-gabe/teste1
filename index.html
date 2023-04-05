@@ -1,43 +1,32 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <title>AR.js A-Frame Location-based</title>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script
-      type="text/javascript"
-      src="https://raw.githack.com/AR-js-org/AR.js/master/three.js/build/ar-threex-location-only.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"
-    ></script>
+    <title>Testing A-FRAME</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <a-scene
-      vr-mode-ui="enabled: false"
-      arjs="sourceType: webcam; videoTexture: false; debugUIEnabled: false"
-      renderer="antialias: true; alpha: true"
-    >
-      <a-camera gps-new-camera="gpsMinDistance: 5"></a-camera>
-      <a-assets>
-        <a-asset-item
-          id="model"
-          src="https://cdn.glitch.global/d8a2001a-3d0e-432f-953d-0426352084ce/scene.gltf?v=1680514852516"></a-asset-item>
-      </a-assets>
-      <a-entity
-        gltf-model="#model"
-        scale="0.001 0.001 0.001"
-        rotation="0 0 0"
-        gps-new-entity-place="latitude:41.14834671941156; longitude:-8.613424113861592"
-      ></a-entity>
-      
-      <a-box
-             color="orange"
-             depth="1"
-             height="1"
-             width="1"
-            gps-new-entity-place="latitude:41.14834671941156; longitude:-8.613434113861592"
-      ></a-box>
-    </a-scene>
+    <h1> Testing A-Frame</h1>
+    <p>
+      Here, you will find just a few tutorials i am doing to learn how to use
+      html and aframe for the first time.
+    </p>
+    <a href="01-AFRAME-example1.html">A-Frame Example 1</a>
+    </p>
+    <a href="01-AFRAME-example2.html">A-Frame Example 2</a>
+    </p>
+    <a href="01-AFRAME-example3.html">A-Frame Example 3</a>
+    </p>
+    </p>
+    
+    <a href="02imagetracking-basic.html">Basic Image Tracking</a>
+    </p>
+    <a href="02imagetrackingpokemon.html">Image Tracking -Pokemon</a>
+    </p>
+    <a href="02imagetrackingfantasy.html">Image Tracking -Fantasy</a>
+    </p>
+    <a href="03basiclocation.html">Basic Location AR</a>
+    </p>
+   <a href="03location-pokemon.html">Location Ar- Pokemon</a>
+    </p>
   </body>
 </html>
+

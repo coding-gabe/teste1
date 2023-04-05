@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AR.js A-Frame Location-based</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+  </head>
+  <body style="margin: 0px; overflow: hidden">
+    <a-scene vr-mofr-ui="enable: false" embedded arjs="debugUIEnabled: false">
+      <a-assets>
+        <a-asset-item
+          id="pokemon"
+          src="https://cdn.glitch.global/d73945cc-0fef-4a52-b298-daaefd92b8f3/scene.glb?v=1680705026487"
+        >
+        </a-asset-item>
+      </a-assets>
+
+      <a-marker preset="hiro">
+        <a-entity
+          gltf-model="#pokemon"
+          scale="0.1 0.1 0.1"
+          rotation="0 0 0"
+          position="0 0 0"
+        >
+        </a-entity>
+      </a-marker>
+
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
