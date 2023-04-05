@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AR.js A-Frame Location-based</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+  </head>
+  <body style="margin: 0px; overflow: hidden">
+    <a-scene vr-mofr-ui="enable: false" embedded arjs="debugUIEnabled: true">
+      <a-assets>
+        <img
+          id="foto"
+          src="https://cdn.glitch.global/d73945cc-0fef-4a52-b298-daaefd92b8f3/logo?v=1680255639995"
+        />
+      </a-assets>
+
+      <a-marker preset="hiro">
+        <a-image
+          width="1"
+          height="1"
+          rotation="0 0 0"
+          position="0 0 0"
+          src="#foto"
+        ></a-image>
+      </a-marker>
+
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>

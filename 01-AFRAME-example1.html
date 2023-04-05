@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>My A-Frame Scene</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+      
+  </head>
+  <body>
+   
+    <a-scene>
+      <!-- your scene goes here -->
+      <a-assets>
+        <a-asset-item 
+          id="pokemon"
+          src="https://cdn.glitch.global/d73945cc-0fef-4a52-b298-daaefd92b8f3/scene.gltf?v=1680276219908">
+        </a-asset-item>
+       </a-assets>
+      
+      <a-box color="blue" position="0 1.5 -2"></a-box>
+      <a-entity
+        gltf-model="#pokemon"
+        scale=".1 .1 .1"
+        rotation="0 180 0"
+        position="0 5 -2"
+      ></a-entity>
+    </a-scene>
+
+  </body>
+  
+</html>
